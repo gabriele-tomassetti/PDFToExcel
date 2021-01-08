@@ -31,7 +31,7 @@ def main(argv):
                 print("attempting to OCR: " + full_path)
                 # add --deskew only if we are sure that the images might need it
                 # because it might create large file together with the option --optmize 0
-                cmd = ["ocrmypdf",  "--skip-text --deskew --rotate-pages --clean --optimize #0", '"' + filename + '"', '"' + new_filename + '"']
+                cmd = ["ocrmypdf",  "--skip-text --deskew --rotate-pages --clean --optimize 0", '"' + filename + '"', '"' + new_filename + '"']
                
                 # you should run OCRmyPDF as a command line tool
                 # see https://ocrmypdf.readthedocs.io/en/latest/batch.html#api
